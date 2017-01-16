@@ -1,0 +1,14 @@
+CREATE DATABASE ci_text;
+USE ci_text;
+GRANT ALL ON ci_text.* TO 'ci'@'localhost'
+IDENTIFIED BY 'ci_pass';
+
+CREATE TABLE Customers(
+    id_customers INT PRIMARY KEY AUTO_INCREMENT,
+    fname VARCHAR(39),
+lname VARCHAR(30)) Engine = InnoDB;
+
+INSERT INTO Customers (fname, lname)
+VALUES('Lisa', 'Smith');
+INSERT INTO Customers (fname, lname)
+VALUES('Pham', 'Huong');

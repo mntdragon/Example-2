@@ -8,3 +8,27 @@ Push - Origin/maaster -submit check tren server github co file chua
 Compile but wrong way the bethod in controller 
 http://localhost/Example-2/index.php/text/sayhello
 khi dat ten method giong ten file.php, vd ten method la index http://localhost/Example-2/index.php/text/
+
+Tao database trong user_guide -> sql.txt
+bat uniform server, paste code CREATE DATABASE ci_text;
+USE ci_text;
+GRANT ALL ON ci_text.* TO 'ci'@'localhost'
+IDENTIFIED BY 'ci_pass';
+
+CREATE TABLE Customers(
+    id_customers INT PRIMARY KEY AUTO_INCREMENT,
+    fname VARCHAR(39),
+lname VARCHAR(30)) Engine = InnoDB;
+
+INSERT INTO Customers (fname, lname)
+VALUES('Lisa', 'Smith');
+INSERT INTO Customers (fname, lname)
+VALUES('Pham', 'Huong');
+
+Chon config-database - them ten user pass database.
+
+Tao Customer_model(model), customer(controller) va show_customers(trong folder customer tu tao trong views),trong config-autoload
+libraries, phan array them ['database]
+Compile: http://localhost/Example-2/index.php/customer/show_customers de chay database Customers
+
+

@@ -1,3 +1,10 @@
 tao reposition ten exampl 2 tren github
 clone repo trong gitKraken
 copy all file trong codeIgniter vao folder Example 2 dang dung
+Unstage file chon STAGE ALL change
+description > CodeIgniter Initialized roi submit
+Push - Origin/maaster -submit check tren server github co file chua
+
+Compile but wrong way the bethod in controller 
+http://localhost/Example-2/index.php/text/sayhello
+khi dat ten method giong ten file.php, vd ten method la index http://localhost/Example-2/index.php/text/

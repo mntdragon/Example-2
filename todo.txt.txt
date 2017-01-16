@@ -1,0 +1,3 @@
+tao reposition ten exampl 2 tren github
+clone repo trong gitKraken
+copy all file trong codeIgniter vao folder Example 2 dang dung
